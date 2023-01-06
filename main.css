@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+@media (max-width:768px) {
+    body {
+        width: 375px;
+    }
+
+}
+
+.loopstudios {
+    background-image: url("images/desktop/image-hero.jpg");
+    /* width: 1440px; */
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+
+}
+
+.cont {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .loopstudios {
+        background-image: url("images/mobile/image-hero.jpg");
+        /* width: 1440px; */
+        background-size: 100% 20%;
+        background-repeat: no-repeat;
+    }
+
+    .cont {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header .logo {
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 40px;
+    display: inline-block;
+}
+
+.header .list {
+    display: inline-block;
+    margin-left: 550px;
+}
+
+.menu {
+    display: none;
+}
+
+.header .list li {
+    display: inline-block;
+    margin-left: 20px;
+    width: fit-content;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.header .list li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: calc(100% - 20px);
+    /*15left and 15 added because of that so 30*/
+    height: 3px;
+    background-color: white;
+}
+
+.header .box {
+    width: 600px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 0.8;
+    font-size: 70px;
+    font-weight: normal;
+    /* margin-left: 90px; */
+    padding: 20px;
+    padding-right: 40px;
+    color: white;
+    border: 2px solid white;
+}
+
+.header .split {
+    padding-bottom: 50px;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .menu {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+
+
+    }
+
+    .header .logo {
+        margin-bottom: 50px;
+        margin-top: 0;
+        padding-top: 40px;
+        display: inline-block;
+    }
+
+    .header .list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        margin-left: 0;
+        z-index: 5;
+        text-align: center;
+        background-color: black;
+    }
+
+    .header .list li {
+        display: block;
+        margin-left: 150px;
+        text-align: center;
+        width: fit-content;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .header .list li:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        width: calc(100% - 20px);
+        /*15left and 15 added because of that so 30*/
+        height: 3px;
+        background-color: white;
+    }
+
+    .header .box {
+        width: 300px;
+        margin-bottom: 20px;
+        font-size: 35px;
+        line-height: 1.3;
+        font-weight: normal;
+        /* margin-left: 90px; */
+        padding: 20px;
+        padding-right: 10px;
+        color: white;
+        border: 2px solid white;
+    }
+
+}
+
+.thebody {
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    position: relative;
+}
+
+.thebody .mid img {
+    width: 600px;
+    height: 450px;
+
+}
+
+.thebody h2 {
+    display: inline-block;
+    width: 300px;
+}
+
+.text {
+    position: absolute;
+    top: 120px;
+    right: 110px;
+    width: 600px;
+    height: 330px;
+    background-color: white;
+    padding: 100px;
+}
+
+.text h2 {
+    font-size: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+}
+
+.text p {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: hsl(0, 0%, 55%);
+}
+
+@media (max-width:768px) {
+    .thebody {
+        margin-top: 250px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .thebody .mid img {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .thebody h2 {
+        display: inline-block;
+        width: 300px;
+        font-size: 25px;
+    }
+
+    .text {
+        position: absolute;
+        top: 300px;
+        right: 20px;
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+        font-weight: normal;
+        text-transform: uppercase;
+
+    }
+
+}
+
+.our-creations {
+    position: relative;
+}
+
+.our-creations h2 {
+    font-size: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.our-creations button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+
+}
+
+.our-creations .creations {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* column-gap: 20px;
+    gap: 20px; */
+    gap: 20px 20px;
+}
+
+.our-creations .creations div {
+    /* margin-left: 20px; */
+
+    position: relative;
+    cursor: pointer;
+}
+
+.our-creations .creations div p {
+    position: absolute;
+    bottom: 50px;
+    font-size: 28px;
+    width: 150px;
+    color: rgba(255, 255, 255, 0.868);
+    left: 50px;
+    text-transform: uppercase;
+
+}
+
+.our-creations .creations div:hover img {
+    opacity: 0.4;
+    background-color: hsla(0, 0%, 55%, 0.566);
+    z-index: 2;
+}
+
+.our-creations .creations div:hover p {
+    z-index: 3;
+    color: hsl(0, 0%, 41%);
+}
+
+@media (max-width:768px) {
+    .our-creations {
+        margin-top: 300px;
+        display: block;
+        position: relative;
+    }
+
+    .our-creations h2 {
+        font-size: 30px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .our-creations button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        right: 35%;
+        bottom: -50px;
+
+    }
+
+    .our-creations .creations {
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* column-gap: 20px;
+        gap: 20px; */
+        gap: 20px 20px;
+    }
+
+    .our-creations .creations div {
+        /* margin-left: 20px; */
+
+
+        position: relative;
+        cursor: pointer;
+    }
+
+    .our-creations .creations div img {
+        width: 335px;
+        height: 120px;
+    }
+
+    .our-creations .creations div p {
+        position: absolute;
+        bottom: 50px;
+        font-size: 24px;
+        width: 150px;
+        color: rgba(255, 255, 255, 0.868);
+        left: 20px;
+        text-transform: uppercase;
+
+    }
+
+}
+
+.footer {
+    background-color: black;
+    margin-top: 100px;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin-left: 300px; */
+}
+
+.footer .left .logo2 {
+    margin-bottom: 30px;
+    /* display: block;
+    margin-right: 50px; */
+}
+
+.footer .left .list2 {
+    margin-bottom: 30px;
+}
+
+.footer .left ul li {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.footer .left ul li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    bottom: -5px;
+    width: calc(100% - 20px);
+    /*15left and 15 added because of that so 30*/
+    height: 3px;
+    background-color: white;
+}
+
+.footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer .right .icons {
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.footer .right .icons div img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .right .icons div {
+    position: relative;
+    display: inline-block;
+}
+
+.footer .right .icons div:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.footer .right p {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 55%);
+}
+
+@media (max-width:768px) {
+
+    .footer {
+        background-color: black;
+        margin-top: 100px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        /* margin-left: 300px; */
+    }
+
+    .footer .left .logo2 {
+        margin-bottom: 30px;
+        margin-left: 70px;
+        /* display: block;
+        margin-right: 50px; */
+    }
+
+    .footer .left .list2 {
+        margin-bottom: 30px;
+        margin-left: 120px;
+        text-align: center;
+    }
+
+    .footer .left ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 60px;
+    }
+
+    .footer .left ul li:hover::after {
+        left: 5px;
+        bottom: -5px;
+    }
+
+    .footer .right .icons {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .footer .right p {
+        margin-left: 40px;
+    }
+}
